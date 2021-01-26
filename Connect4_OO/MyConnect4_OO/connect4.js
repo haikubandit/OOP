@@ -126,7 +126,7 @@ class Game {
 			console.log(this.HEIGHT);
 			return cells.every(
 				([ y, x ]) =>
-					y >= 0 && y < this.HEIGHT && x >= 0 && x < this.WIDTH && thisboard[y][x] === this.currPlayer
+					y >= 0 && y < this.HEIGHT && x >= 0 && x < this.WIDTH && this.board[y][x] === this.currPlayer
 			);
 		}
 
